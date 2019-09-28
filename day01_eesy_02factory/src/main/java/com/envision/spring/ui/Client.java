@@ -1,8 +1,7 @@
-package com.envision.ui;
+package com.envision.spring.ui;
 
-import com.envision.factory.BeanFactory;
-import com.envision.service.IAccountService;
-import com.envision.service.impl.AccountServiceImp;
+import com.envision.spring.factory.BeanFactory;
+import com.envision.spring.service.IAccountService;
 
 public class Client {
 

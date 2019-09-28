@@ -1,6 +1,6 @@
-package com.envision.dao.impl;
+package com.envision.spring.dao.impl;
 
-import com.envision.dao.IAccountDao;
+import com.envision.spring.dao.IAccountDao;
 
 /**
  * 账户的持久层实现类

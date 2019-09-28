@@ -1,4 +1,4 @@
-package com.envision.dao;
+package com.envision.spring.dao;
 
 /**
  * 账户的持久层接口
