@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>day01_eesy_02factory</module>
+        <module>day01_eesy_03spring</module>
     </modules>
 
 

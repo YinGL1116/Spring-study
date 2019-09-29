@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day01_eesy_02factory" />
+        <module name="day01_eesy_03spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
