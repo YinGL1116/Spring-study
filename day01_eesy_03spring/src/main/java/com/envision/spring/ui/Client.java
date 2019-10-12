@@ -30,7 +30,7 @@ public class Client {
      */
     public static void main(String[] args) {
 
-        /*
+
         //1获取核心容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //读取磁盘任意位置的配置文件实例
@@ -42,12 +42,14 @@ public class Client {
         System.out.println(accountService);
         System.out.println(accountDao);
 
-         */
+        accountService.saveAccount();
+
+
         //-----------BeanFactory--------------
-        Resource resource = new ClassPathResource("bean.xml");
-        BeanFactory factory = new XmlBeanFactory(resource);
-        IAccountService as = (IAccountService)factory.getBean("accountService");
-        System.out.println(as);
+        //Resource resource = new ClassPathResource("bean.xml");
+        //BeanFactory factory = new XmlBeanFactory(resource);
+        //IAccountService as = (IAccountService)factory.getBean("accountService");
+        //System.out.println(as);
 
     }
 }

@@ -13,7 +13,7 @@ public class AccountServiceImp implements IAccountService {
         System.out.println("对象已经创建");
     }
 
-    private IAccountDao accountDao = new AccountDaoImpl();
+    private IAccountDao accountDao;
 
     public void saveAccount() {
         accountDao.saveAccount();
