@@ -21,6 +21,35 @@
     <bean id="instanceFactory" class="com.envision.spring.factory.InstanceFactory"></bean>
     <bean id="accountService" factory-bean="instanceFactory" factory-method="getAccountService"></bean>
     -->
-    <!-- 3.使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象并存入spring容器） -->
+    <!-- 3.使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象并存入spring容器）
     <bean id="accountService" class="com.envision.spring.factory.StaticFactory" factory-method="getAccountService"></bean>
+    -->
+    <!-- bean的作用范围调整
+        bean标签的scope属性：
+            作用：用于指定bean的作用范围
+            取值：
+                singleton:单例 （默认值）
+                prototype：多例
+                request：作用于web应用的请求范围
+                session：作用于web应用的会话范围
+                global-session：作用于集群环境的会话范围（全局会话范围） 当不是集群环境 就相当于session
+
+    <bean id="accountService" class="com.envision.spring.service.impl.AccountServiceImp" scope="singleton"></bean>
+    -->
+
+    <!-- bean对象的生命周期
+        单例：
+            出生：当容器创建时出生
+            活着：只要容器在 对象就一直活着
+            死亡：单例对象的生命周期和容器相同
+
+        多例：
+            出生：当使用对象时  spring框架才创建对象
+            活着：对象使用过程中
+            死亡：当对象长时间不用且无对象引用时 由java垃圾回收器收回
+    -->
+    <bean id="accountService" class="com.envision.spring.service.impl.AccountServiceImp" scope="prototype"
+    init-method="init" destroy-method="destroy"></bean>
+
+
 </beans>

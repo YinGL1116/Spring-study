@@ -31,7 +31,8 @@ public class Client {
 
 
         //1获取核心容器对象
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        //ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //读取磁盘任意位置的配置文件实例
         //ApplicationContext ac = new FileSystemXmlApplicationContext("C:\\……");
         //2根据ID获取bean对象
@@ -39,7 +40,9 @@ public class Client {
 
         System.out.println(accountService);
 
-        accountService.saveAccount();
+        //容器销毁
+        ac.close();
+
 
 
         //-----------BeanFactory--------------
