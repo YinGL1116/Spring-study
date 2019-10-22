@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="day01_eesy_03spring" />
         <module name="day01_eesy_04bean" />
-        <module name="day01_eesy_05di" />
         <module name="day01_eesy_02factory" />
+        <module name="day01_eesy_05di" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -36,7 +36,7 @@ public class Client {
         //读取磁盘任意位置的配置文件实例
         //ApplicationContext ac = new FileSystemXmlApplicationContext("C:\\……");
         //2根据ID获取bean对象
-        IAccountService accountService = (IAccountService)ac.getBean("accountService2");
+        IAccountService accountService = (IAccountService)ac.getBean("accountService3");
 
         accountService.saveAccount();
 

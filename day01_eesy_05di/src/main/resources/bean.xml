@@ -66,5 +66,54 @@
         <property name="birthday" ref="now"></property>
     </bean>
 
+    <!--复杂集合的注入/集合类型的注入
+        用于给set集合注入的标签有 list array set
+        用于给map集合注入的标签有 map props
+        结构相同 标签可以互换
+        -->
+    <bean id="accountService3" class="com.envision.spring.service.impl.AccountServiceImp3">
+        <property name="myStrs">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="a" value="AAA"></entry>
+                <entry key="b">
+                    <value>BBB</value>
+
+                </entry>
+            </map>
+        </property>
+
+        <property name="myPro">
+            <map>
+                <entry key="a" value="AAA"></entry>
+                <entry key="b">
+                    <value>BBB</value>
+
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+
 
 </beans>
