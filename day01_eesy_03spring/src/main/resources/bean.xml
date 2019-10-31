@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--把对象的创建交给spring管理-->
-    <bean id="accountService" class="com.envision.spring.service.impl.AccountServiceImp"></bean>
+    <bean id="accountService" class="AccountServiceImp"></bean>
 
-    <bean id="accountDao" class="com.envision.spring.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="AccountDaoImpl"></bean>
 </beans>
