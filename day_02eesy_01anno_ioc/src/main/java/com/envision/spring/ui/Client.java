@@ -1,6 +1,7 @@
 package com.envision.spring.ui;
 
 import com.envision.spring.dao.IAccountDao;
+import com.envision.spring.dao.impl.AccountDaoImpl;
 import com.envision.spring.service.IAccountService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,6 +23,9 @@ public class Client {
 
 
         System.out.println(accountService);
+
+        IAccountDao accountDao = ac.getBean("accountDao", AccountDaoImpl.class);
+        System.out.println(accountDao);
 
         //accountService.saveAccount();
 

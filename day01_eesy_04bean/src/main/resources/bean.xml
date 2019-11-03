@@ -48,7 +48,7 @@
             活着：对象使用过程中
             死亡：当对象长时间不用且无对象引用时 由java垃圾回收器收回
     -->
-    <bean id="accountService" class="AccountServiceImp" scope="prototype"
+    <bean id="accountService" class="com.envision.spring.service.impl.AccountServiceImp" scope="prototype"
     init-method="init" destroy-method="destroy"></bean>
 
 
