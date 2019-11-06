@@ -2,6 +2,8 @@ package com.envision.spring.service.impl;
 
 import com.envision.spring.dao.IAccountDao;
 import com.envision.spring.service.IAccountService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +41,9 @@ import org.springframework.stereotype.Service;
  *              使用注解注入 不用set方法
  *
  *          注意：先 byType 不行再byName
+ *      @Qualifier
+ *          作用：在按照类中注入的基础上再按照名称注入，在给类成员注入时不能单独使用(必须与Autowired配合)，但是在给方法参数注入时可以使用
+ *          属性：value 用于指定注入bean的id
  *
  *
  * 用于改变作用范围的
@@ -58,6 +63,8 @@ public class AccountServiceImp implements IAccountService {
         System.out.println("对象已经创建");
     }
 
+    @Autowired
+    @Qualifier("accountDao2")
     private IAccountDao accountDao;
 
     public void saveAccount() {

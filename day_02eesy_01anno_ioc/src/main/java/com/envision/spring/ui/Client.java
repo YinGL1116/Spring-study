@@ -22,12 +22,7 @@ public class Client {
         IAccountService accountService = (IAccountService)ac.getBean("accountService");
 
 
-        System.out.println(accountService);
-
-        IAccountDao accountDao = ac.getBean("accountDao", AccountDaoImpl.class);
-        System.out.println(accountDao);
-
-        //accountService.saveAccount();
+        accountService.saveAccount();
 
     }
 }
