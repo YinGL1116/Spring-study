@@ -13,7 +13,8 @@
         <module>day01_eesy_03spring</module>
         <module>day01_eesy_04bean</module>
         <module>day01_eesy_05di</module>
-        <module>day_02eesy_01anno_ioc</module>
+        <module>day02_eesy_01anno_ioc</module>
+        <module>day02_eesy_02account_xmlioc</module>
     </modules>
 
     <dependencies>
@@ -23,6 +24,21 @@
             <version>5.1.6.RELEASE</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 编码和编译和JDK版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 
 </project>
