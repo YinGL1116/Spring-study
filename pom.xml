@@ -17,6 +17,8 @@
         <module>day02_eesy_02account_xmlioc</module>
         <module>day02_eesy_03account_annoioc</module>
         <module>day03_01account</module>
+        <module>demo_JdbcTemplate</module>
+        <module>demo_test_1</module>
     </modules>
 
     <dependencies>
