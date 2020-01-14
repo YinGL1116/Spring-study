@@ -2,11 +2,12 @@ package com.envision.spring.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.envision.spring.dao.IAccountDao;
 import com.envision.spring.domain.Account;
 import com.envision.spring.service.IAccountService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 @Service("accountService")
 public class AccountServiceImpl implements IAccountService {
@@ -41,7 +42,7 @@ public class AccountServiceImpl implements IAccountService {
 
     @Override
     public Account findAccountByName(String name) {
-        return  accountDao.findByName(name);
+        return accountDao.findByName(name);
     }
 
     @Override
@@ -49,8 +50,9 @@ public class AccountServiceImpl implements IAccountService {
         Account srcAccount = findAccountByName(src);
         Account desAccount = findAccountByName(des);
         srcAccount.setMoney(srcAccount.getMoney() - money);
-        desAccount.setMoney(srcAccount.getMoney() + money);
+        desAccount.setMoney(desAccount.getMoney() + money);
         updateAccount(srcAccount);
+        int i = 1 / 0;
         updateAccount(desAccount);
     }
 }

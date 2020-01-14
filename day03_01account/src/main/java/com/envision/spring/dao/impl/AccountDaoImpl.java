@@ -6,11 +6,11 @@ import java.util.List;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.envision.spring.dao.IAccountDao;
 import com.envision.spring.domain.Account;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 @Repository("accountDao")
 public class AccountDaoImpl implements IAccountDao {
@@ -30,7 +30,7 @@ public class AccountDaoImpl implements IAccountDao {
     @Override
     public void update(Account account) {
         try {
-            runner.update("update account name=?,money=? where id=?", account.getName(), account.getMoney(),
+            runner.update("update account set name=?,money=? where id=?", account.getName(), account.getMoney(),
                     account.getId());
         } catch (SQLException e) {
             throw new RuntimeException(e);

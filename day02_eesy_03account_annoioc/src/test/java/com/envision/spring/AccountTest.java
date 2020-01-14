@@ -1,11 +1,11 @@
-package spring;
+package com.envision.spring;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.envision.spring.domain.Account;
 import com.envision.spring.service.IAccountService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AccountTest {
 
