@@ -31,6 +31,7 @@ public class TransactionManager {
     public void rollback() {
         try {
             Connection connection = connectionUtil.getConnection();
+            connection.setAutoCommit(false);
             connection.rollback();
         } catch (SQLException e) {
             e.printStackTrace();
