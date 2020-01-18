@@ -1,6 +1,5 @@
 package com.envision.spring.util;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,9 +29,7 @@ public class TransactionManager {
 
     public void rollback() {
         try {
-            Connection connection = connectionUtil.getConnection();
-            connection.setAutoCommit(false);
-            connection.rollback();
+            connectionUtil.getConnection().rollback();
         } catch (SQLException e) {
             e.printStackTrace();
         }
