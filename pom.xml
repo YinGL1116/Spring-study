@@ -19,6 +19,8 @@
         <module>day03_01account</module>
         <module>demo_JdbcTemplate</module>
         <module>demo_test_1</module>
+        <module>day03_02AOP</module>
+        <module>day03_03AOP_anno</module>
     </modules>
 
     <dependencies>
@@ -31,6 +33,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.1.6.RELEASE</version>
+        </dependency>
+        <!-- aspect -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.7</version>
         </dependency>
     </dependencies>
 
