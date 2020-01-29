@@ -21,6 +21,7 @@
         <module>demo_test_1</module>
         <module>day03_02AOP</module>
         <module>day03_03AOP_anno</module>
+        <module>day03_account_aop</module>
     </modules>
 
     <dependencies>
@@ -33,6 +34,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
         <!-- aspect -->
         <dependency>
