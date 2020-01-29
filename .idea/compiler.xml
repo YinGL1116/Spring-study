@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="day01_eesy_02factory" />
         <module name="day03_02AOP" />
         <module name="day_02eesy_01anno_ioc" />
         <module name="day02_eesy_03account_annoioc" />
@@ -18,6 +17,7 @@
         <module name="day01_eesy_05di" />
         <module name="demo_test_1" />
         <module name="day01_eesy_04bean" />
+        <module name="day01_eesy_02factory" />
         <module name="day03_03AOP_anno" />
       </profile>
     </annotationProcessing>

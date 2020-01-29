@@ -1,4 +1,4 @@
-package com.envision.spring.cofig;
+package com.envision.spring.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

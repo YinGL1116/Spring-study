@@ -1,6 +1,6 @@
 package com.envision.spring;
 
-import com.envision.spring.cofig.SpringConfig;
+import com.envision.spring.config.SpringConfig;
 import com.envision.spring.service.IAccountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
