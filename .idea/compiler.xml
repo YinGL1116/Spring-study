@@ -9,6 +9,7 @@
         <module name="day02_eesy_02account_xmlioc" />
         <module name="demo_JdbcTemplate" />
         <module name="day03_account_aop" />
+        <module name="day04_tx_xml" />
         <module name="day03_02AOP" />
         <module name="day01_eesy_04bean" />
         <module name="demo_test_1" />
