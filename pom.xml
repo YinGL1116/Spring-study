@@ -22,6 +22,8 @@
         <module>day03_02AOP</module>
         <module>day03_03AOP_anno</module>
         <module>day03_account_aop</module>
+        <module>day04_jdbcTemplate</module>
+        <module>day04_tx_xml</module>
     </modules>
 
     <dependencies>
@@ -36,9 +38,19 @@
             <version>5.1.6.RELEASE</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
         </dependency>
         <!-- aspect -->
         <dependency>
