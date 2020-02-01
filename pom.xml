@@ -24,6 +24,7 @@
         <module>day03_account_aop</module>
         <module>day04_jdbcTemplate</module>
         <module>day04_tx_xml</module>
+        <module>day04_tx_anno_noxml</module>
     </modules>
 
     <dependencies>
